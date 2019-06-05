@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+
+//VARIABLES AND ATTRIBUTES
+
+//number: a numerical value
+var number=2;
+
+console.log(number);
+
+//string: text
+var string="Hello My name is Eva";
+console.log(string);
+
+//boolean: A boolean operator, or logical operator, consists of operators such as AND, OR, NOT, etc. These operators are used with conditional statement, where there in only 2 options, False 0 or True 1.
+
+var x= true;
+if (x) {
+	console.log(x);
+}
+
+//array: JavaScript arrays are used to store multiple values in a single variable.
+
+var cars = ["Saab", "Volvo", "BMW"];
+console.log (cars);
+
+//dictionary / objects: JavaScript objects are containers for named values called properties or methods. firstName is the property and John is the value.
+
+var person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+console.log(person);
+
+//undefined:The undefined property indicates that a variable has not been assigned a value, or not declared at all
+
+var notDefined;
+console.log(notDefined);
+
+//sample if / else
+
+var hour = 8
+if (hour < 18) {
+  console.log ("Good day");
+} else {
+  console.log ("Good evening");
+};
+
+//FUNCTIONS: A function is a JavaScript procedure—a set of statements that performs a task or calculates a value. To use a function, you must define it somewhere in the scope from which you wish to call it.
+
+function myFunction() {
+  console.log ("Hello Function!");
+}
+myFunction()
+;
+//parameters: Function parameters are the names listed in the function definition. Whereas Function arguments are the real values passed to (and received by) the function
+
+function myFunction2() {
+  console.log ("Hello Parameter!");
+}
+//returns: Calling the function to return a value.
+
+myFunction2()
+;
+//ARRAYS: data structures, compartments that store information
+//var cars = ["Saab", "Volvo", "BMW"];
+//console.log (cars);
+//add to the front
+cars.unshift("Honda");
+console.log(cars);
+
+//add to the end
+cars.push("Ford");
+console.log(cars);
+
+//update values: changing a value within the array
+cars[0] = "Dodge"
+console.log(cars)
+
+
+//LOOPS
+//for: loops through a block of code a number of times
+var todos=[
+"clean room", 
+"study", 
+"brush teeth", 
+"eat",
+"sleep",
+];
+
+for (var i=0; i < todos.length; i++){
+console.log(todos[i]+"!");
+}
+
+//for/in: loops through the properties of an object
+
+var person = {fname:"John", lname:"Doe", age:25}; 
+
+var text = "";
+var x;
+for (x in person) {
+  text += person[x] + " ";
+}
+
+
+//while: loops through a block of code while a specified condition is true. Check the condition before running the loop
+var counterOne = 0;
+while (counterOne<10){
+	console.log(counterOne);
+	counterOne++
+}
+
+//do while: loops through a block of code once, and then repeats the loop while a specified condition is true. Runs the loop first. 
+var counterTwo = 10
+do{
+	console.log(counterTwo);counterTwo--;
+}
+while (counterTwo > 0);
+
+//forEach (with array and function): executes a provided function once for each array element
+var todos=[
+"clean room", 
+"study", 
+"brush teeth", 
+"eat",
+"sleep",
+];
+
+todos.forEach(function (todo, i){
+	console.log(todo, i);
+})
+
+
+//Objects / Dictionaries:  JavaScript objects are containers for named values called properties or methods. name is the property and John is the value.
+var user={
+	name: "John",
+	age: 34, 
+	hobby: "soccer",
+	isMarried: false, 
+	skills: ["math", "javascript"]
+};
+
+//declare object
+
+console.log(user.name);
+
+//lookup key to retrieve value 
+
+const object1 = {
+  a: 'somestring',
+  b: 42,
+  c: false
+};
+
+console.log(Object.values(object1));
+//
+
+
+	</script>
+
+</body>
+</html>

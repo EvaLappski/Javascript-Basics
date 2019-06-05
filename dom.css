@@ -1,0 +1,52 @@
+body{
+	font-family:'Fjalla One', sans-serif;
+}
+
+#idDiv {
+	width: 300px;
+	border: 25px;
+	padding: 25px;
+	margin: 25px;
+	border-radius: 24px 24px 115px 24px;
+	-moz-border-radius: 24px 24px 115px 24px;
+	-webkit-border-radius: 24px 24px 115px 24px;
+	border: 5px solid #080C3B;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#idCards{
+	border: solid;
+}
+
+.classCardsExcercise{
+	display: flex; 
+/*defaults to row*/
+	
+}
+
+.classLeftDiv{
+	width: 50%;
+}
+
+.classRightDiv{
+	width: 50%;
+}
+
+.classNewCard{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50%;
+  width: 50%;
+  padding: 70px 0;
+  border: 3px solid green;
+border-radius: 130px 122px 122px 122px;
+-moz-border-radius: 130px 122px 122px 122px;
+-webkit-border-radius: 130px 122px 122px 122px;
+border: 12px double #000000;
+text-align: center;
+}
+
+
